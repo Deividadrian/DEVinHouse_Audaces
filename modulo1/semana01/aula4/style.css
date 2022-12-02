@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+}
+
+.titulo3 {
+  color: purple;
+  font-family: sans-serif;
+}
+
+.destaque span{
+  background-color: rgb(0, 255, 13);
+}
+
+.destaque span span{
+  background-color: yellow;
+}
+
+ul {
+  color: green
+}
+
+ul>li>ul>li>p { 
+  color: blue;
+}
