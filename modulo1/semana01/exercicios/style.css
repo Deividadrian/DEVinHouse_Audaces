@@ -12,14 +12,32 @@ body {
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
-  color: #280f73;
+  color: white;
   text-align: center;
+  background-image: url(https://vidafullstack.com.br/wp-content/uploads/2021/07/versao-12-angular-1080x675.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 p {
   font-size: 10px;
 }
 
-button>a {
+a {
   text-decoration: none;
+}
+
+a>img {
+  margin-top: 10px;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 10px;
+  border: solid 2px black;
+}
+
+div>h1 {
+  width: 483px;
+  height: 25px;
+  margin-bottom: 0;
 }
