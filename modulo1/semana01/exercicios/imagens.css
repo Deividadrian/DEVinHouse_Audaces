@@ -5,9 +5,16 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 img {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   object-fit: fill;
+  padding: 10px;
 }
 
