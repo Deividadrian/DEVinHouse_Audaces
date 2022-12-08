@@ -1,1 +1,1 @@
-![ DEVinHouse Banner] (DEVinHouse.png "DEVinHouse Banner")
+![DEVinHouse Banner](DEVinHouse.png "DEVinHouse Banner")
