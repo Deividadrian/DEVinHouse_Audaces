@@ -1,11 +1,34 @@
-const idade = parseInt(prompt('Digite a sua idade.'))
+const idade = prompt('Digite a sua idade.')
 
-if (idade <= 15) {
-  alert('Pessoa Jovem')
-} else if (idade > 15 && idade <= 64) {
-  alert('Pessoa Adulta')
-} else if (idade > 64) {
-  alert('Pessoa Idosa')
-} else {
-  alert('Você não digitou o número!')
+function processIdade(idade) {
+  if (idade === null) {
+    return 'Operação cancelada'
+  }
+
+  if (isNaN(idade)) {
+    return 'Não foi digitado números!'
+  }
+
+  if (!idade) {
+    return 'Não foi digitado nenhum valor!'
+  }
+
+  if (idade < 0) {
+    return 'Foi digitado um valor negativo!'
+  }
+
+  if (idade >= 0 && idade <= 15) {
+    return 'Pessoa Jovem'
+  }
+
+  if (idade > 15 && idade <= 64) {
+    return 'Pessoa Adulta'
+  }
+
+  if (idade > 64) {
+    return 'Pessoa Idosa'
+  }
 }
+
+alert(processIdade(idade))
+location.reload()
