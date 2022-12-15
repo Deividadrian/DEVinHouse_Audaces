@@ -1,0 +1,15 @@
+{
+  "name": "devinhouse-audaces",
+  "version": "1.0.0",
+  "description": "Destinado aos exercicios semanais feitos na formação da DEVinHouse_Audaces.",
+  "main": "index.js",
+  "repository": "git@github.com:Deividadrian/DEVinHouse_Audaces.git",
+  "author": "deividadrian <deividadrian24@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}

@@ -1,16 +1,30 @@
-const numeros = [1]
+const arrList = null;
 
-const procuraMinMax = num => {
-  if (num === null) {
-    return 'Array com valor nulo'
-  }
-  if (num.length === 0) {
-    return 'Array vazio!'
-  }
-  if (num.length === 1) {
-    return num[0]
-  }
-  return [num[0], num[num.length - 1]]
-}
+const minMax = (arr) => {
+  let min = +Infinity;
+  let max = -Infinity;
 
-console.log(procuraMinMax(numeros))
+  if (arr === null || arr.length === 0) {
+    return null;
+  }
+
+  arr.forEach((item) => {
+    if (item < min) {
+      min = item;
+    }
+    if (item > max) {
+      max = item;
+    }
+  });
+  return { min, max };
+};
+
+const procuraMinMax = (arr) => {
+  const value = minMax(arr);
+  if (value === null) {
+    return console.log('Não é possível encontrar');
+  }
+  return console.log(`O menor valor é: ${value.min} e o maior valor é: ${value.max}`);
+};
+
+module.exports = minMax;
