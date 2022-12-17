@@ -7,6 +7,5 @@ btn.addEventListener('click', (e) => {
 });
 
 const mensagemOla = (inputNome) => {
-  const nome = inputNome;
-  return nome.value;
+  return inputNome.value;
 };
