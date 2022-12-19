@@ -1,7 +1,8 @@
 const verificaPalindromo = (str) => {
-  const verificaPalindromo = [...str].reverse().join('') === str;
+  const strLowerCase = str.toLowerCase();
+  const palimetro = [...strLowerCase].reverse().join('') === strLowerCase;
 
-  return verificaPalindromo;
+  return palimetro;
 };
 
-console.log(verificaPalindromo('ana'));
+console.log(verificaPalindromo('Pna'));
